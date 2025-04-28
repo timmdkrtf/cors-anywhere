@@ -16,7 +16,7 @@ var cors_proxy = require('./lib/cors-anywhere');
 cors_proxy.createServer({
   originBlacklist: originBlacklist,
   originWhitelist: originWhitelist,
-  requireHeader: ['x-requested-with'], // <-- UBAH DISINI
+  requireHeader: [], // <-- UBAH DISINI
   checkRateLimit: checkRateLimit,
   removeHeaders: [
     'cookie',
